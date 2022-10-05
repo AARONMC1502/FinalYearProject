@@ -1,7 +1,6 @@
 import json
 
 def usedPad(numbersUsed):
-    newPad = []
     with open("pad.json") as file:
         pad = json.load(file)
 
