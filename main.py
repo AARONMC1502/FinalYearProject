@@ -1,6 +1,5 @@
 from Encrypt import encrypt
 from Decrypt import decrypt
-from MessageFormatting import messageFormat
 import json
 
 #pad = padGeneration()
@@ -8,7 +7,7 @@ import json
 f = open("pad.json")
 pad = json.load(f)
 
-p_text = messageFormat(input())
+p_text = input()
 
 c_text = encrypt(list(pad), p_text)
 
