@@ -4,7 +4,7 @@ def padGeneration():
     x = 0
     randomNumbers = []
     while x < 7000:
-        a = secrets.SystemRandom().randint(1, 26)
+        a = secrets.SystemRandom().randint(1, 100)
         randomNumbers.append(a)
         x += 1
     with open("pad.json", "a") as pad:
