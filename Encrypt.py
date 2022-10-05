@@ -6,9 +6,6 @@ def encrypt(pad, message):
     cipherText = ""
     plainText = [*message]
     for i in range(len(plainText)):
-        """if plainText[i] == " ":
-            cipherText += plainText[i]
-            continue"""
         cipherIndex = (alphabet.index(plainText[i]) + pad[i]) % 100
         cipherText += alphabet[cipherIndex]
     usedPad(len(str(cipherText)))
