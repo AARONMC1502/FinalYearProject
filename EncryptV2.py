@@ -1,10 +1,10 @@
-import TextToBinary
+import Conversions
 import UsedPad
 
 def encryptV2(message, pad):
     cipherBin = ""
 
-    binMessage = TextToBinary.toBinary(message, "utf-8")
+    binMessage = Conversions.toBinary(message, "utf-8")
 
     a = 0
     for char in [*binMessage]:
