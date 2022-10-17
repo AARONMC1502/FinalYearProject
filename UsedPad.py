@@ -1,5 +1,3 @@
-import json
-
 def usedPad(numbersUsed):
     with open("pad.txt") as file:
         pad = file.read()
