@@ -1,9 +1,9 @@
-from Encrypt import encrypt
-from Decrypt import decrypt
-import json
+from EncryptV2 import encryptV2
+from DecryptV2 import decryptV2
+import BinaryToText
 
-f = open("pad.json")
-pad = json.load(f)
+f = open("pad.txt")
+pad = f.read()
 
 # Shows how many characters are left in the pad
 print("left in pad: {0}".format(len(pad)))
@@ -12,9 +12,11 @@ print("left in pad: {0}".format(len(pad)))
 p_text = input("Message: ")
 
 #Generates and print cipher text
-c_text = encrypt(list(pad), p_text)
-print("Cipher text: {0}".format(c_text))
+c_binary = encryptV2(p_text, pad)
+print("Cipher binary: {0}".format(c_binary))
 
 #Decrypts cipher text and print original plain text
-d_text = decrypt(pad, c_text)
-print("Decrypted text: {0}".format(d_text))
+d_text = decryptV2(c_binary, pad)
+print("Decrypted binary: {0}".format(d_text))
+
+print("Decrypted message: {0}".format(BinaryToText.toBinary(d_text)))

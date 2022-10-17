@@ -1,11 +1,11 @@
 import json
 
 def usedPad(numbersUsed):
-    with open("pad.json") as file:
-        pad = json.load(file)
+    with open("pad.txt") as file:
+        pad = file.read()
 
     #removes used numbers in pad
-    del pad[0:numbersUsed]
+    pad = pad[numbersUsed:]
 
-    with open("pad.json", "w") as newFile:
+    with open("pad.txt", "w") as newFile:
         newFile.write(str(pad))
