@@ -1,7 +1,7 @@
 import Conversions
 import UsedPad
 
-def encryptV2(message, pad):
+def encrypt(message, pad):
     cipherBin = ""
     binMessage = Conversions.toBinary(message, "utf-8")
 

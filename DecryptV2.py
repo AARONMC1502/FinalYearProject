@@ -1,4 +1,4 @@
-def decryptV2(cipherBin, pad):
+def decrypt(cipherBin, pad):
     a = 0
     plainBin = ""
 

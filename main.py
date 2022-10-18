@@ -1,5 +1,5 @@
-from EncryptV2 import encryptV2
-from DecryptV2 import decryptV2
+from EncryptV2 import encrypt
+from DecryptV2 import decrypt
 import Conversions
 
 f = open("pad.txt")
@@ -12,11 +12,11 @@ print("left in pad: {0}".format(len(pad)))
 p_text = input("Message: ")
 
 #Generates and prints cipher binary
-c_binary = encryptV2(p_text, pad)
+c_binary = encrypt(p_text, pad)
 print("Cipher binary: {0}".format(c_binary))
 
 #Decrypts cipher binary and prints message binary
-d_text = decryptV2(c_binary, pad)
+d_text = decrypt(c_binary, pad)
 print("Decrypted binary: {0}".format(d_text))
 
 #decoded binary
