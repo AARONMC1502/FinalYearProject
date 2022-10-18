@@ -5,8 +5,9 @@ import Conversions
 f = open("pad.bin")
 pad = f.read()
 
-# Shows how many characters are left in the pad
-print("left in pad: {0}".format(len(pad)))
+# Shows how much is left in the pad in percentage
+padLeftPercentage = 100 - ((160000 - len(pad)) / 160000) * 100
+print("left in pad: {0}% left".format(padLeftPercentage))
 
 #plaintext message
 p_text = input("Message: ")

@@ -8,4 +8,5 @@ def decrypt(cipherBin, pad):
     for char in [*cipherBin]:
         a += 1
         plainBin += str(int(char) ^ int([*pad][a]))
+
     return plainBin
