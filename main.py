@@ -2,7 +2,7 @@ from EncryptV2 import encrypt
 from DecryptV2 import decrypt
 import Conversions
 
-f = open("pad.txt")
+f = open("pad.bin")
 pad = f.read()
 
 # Shows how many characters are left in the pad

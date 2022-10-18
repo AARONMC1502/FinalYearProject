@@ -1,9 +1,9 @@
 def usedPad(numbersUsed):
-    with open("pad.txt") as file:
+    with open("pad.bin") as file:
         pad = file.read()
 
     #removes used numbers in pad
     pad = pad[numbersUsed:]
 
-    with open("pad.txt", "w") as newFile:
+    with open("pad.bin", "w") as newFile:
         newFile.write(str(pad))

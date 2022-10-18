@@ -8,7 +8,7 @@ def padGeneration():
         a = secrets.SystemRandom().randint(0, 1)
         randomNumbers += str(a)
         x += 1
-    with open("pad.txt", "a") as pad:
+    with open("pad.bin", "a") as pad:
         pad.write(str(randomNumbers))
         pad.close()
 
