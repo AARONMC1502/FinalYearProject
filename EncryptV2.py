@@ -8,9 +8,9 @@ def encrypt(message, pad):
 
     a = 0
 
-    for char in [*binMessage]:
+    for bit in [*binMessage]:
         a += 1
-        cipherBin += str(int(char) ^ int([*pad][a]))
+        cipherBin += str(int(bit) ^ int([*pad][a]))
 
     UsedPad.usedPad(len(binMessage))
     return cipherBin

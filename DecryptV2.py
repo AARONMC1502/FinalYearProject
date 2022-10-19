@@ -10,8 +10,8 @@ def decrypt(cipherBin, pad):
             print("add")
             plainBin += "0"
 
-    for char in [*cipherBin]:
+    for bit in [*cipherBin]:
         a += 1
-        plainBin += str(int(char) ^ int([*pad][a]))
+        plainBin += str(int(bit) ^ int([*pad][a]))
 
     return plainBin
