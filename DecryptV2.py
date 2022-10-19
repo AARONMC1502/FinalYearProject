@@ -3,6 +3,7 @@ def decrypt(cipherBin, pad):
     plainBin = ""
 
     if len(cipherBin) % 8 > 0:
+        print("add")
         plainBin += "0"
 
     for char in [*cipherBin]:
