@@ -9,16 +9,16 @@ pad = f.read()
 padLeftPercentage = 100 - ((160000 - len(pad)) / 160000) * 100
 print("left in pad: {0}% left".format(padLeftPercentage))
 
-#plaintext message
+# plaintext message
 p_text = input("Message: ")
 
-#Generates and prints cipher binary
+# Generates and prints cipher binary
 c_binary = encrypt(p_text, pad)
 print("Cipher binary: {0}".format(c_binary))
 
-#Decrypts cipher binary and prints message binary
+# Decrypts cipher binary and prints message binary
 d_text = decrypt(c_binary, pad)
 print("Decrypted binary: {0}".format(d_text))
 
-#decoded binary
+# decoded binary
 print("Decrypted message: {0}".format(Conversions.toText(d_text)))
