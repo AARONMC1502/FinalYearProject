@@ -12,8 +12,8 @@ def toBinary(text, *kwargs):
     binText = bin(int(binascii.hexlify(byteText), 16))
 
     if text.isdigit():
+        print("added for digit")
         formattedBinMessage = "0" + binText[2:]
-
     else:
         formattedBinMessage = binText[2:]
 
