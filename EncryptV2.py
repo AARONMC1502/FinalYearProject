@@ -5,8 +5,6 @@ import UsedPad
 def encrypt(message, pad):
     cipherBin = ""
 
-    print(list(message))
-
     binMessage = list(Conversions.toBinary(message, "utf-8"))
 
     a = 0

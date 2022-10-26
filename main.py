@@ -16,6 +16,9 @@ p_text = input("Message: ")
 c_binary = encrypt(p_text, pad)
 print("Cipher binary: {0}".format(c_binary))
 
+# Shows what will be sent represented as UTF-8
+print("Encrypted message: {0}".format(Conversions.toText(c_binary)))
+
 # Decrypts cipher binary and prints message binary
 d_text = decrypt(c_binary, pad)
 print("Decrypted binary: {0}".format(d_text))

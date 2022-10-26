@@ -3,7 +3,7 @@ def usedPad(numbersUsed):
         pad = file.read()
 
     # removes used numbers in pad
-    pad = pad[numbersUsed:]
+    pad = pad[numbersUsed + 16:]
 
     with open("pad.bin", "w") as newFile:
         newFile.write(str(pad))
