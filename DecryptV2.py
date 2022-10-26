@@ -1,6 +1,10 @@
+import Conversions
+
+
 def decrypt(cipherBin, pad):
     a = 0
     plainBin = ""
+    pad = Conversions.toBinary(pad, "utf-8")
 
     x = len(cipherBin) % 8
 

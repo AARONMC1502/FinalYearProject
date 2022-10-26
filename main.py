@@ -2,12 +2,12 @@ from EncryptV2 import encrypt
 from DecryptV2 import decrypt
 import Conversions
 
-f = open("pad.bin")
+f = open("pad.txt")
 pad = f.read()
 
 # Shows how much is left in the pad in percentage
-padLeftPercentage = 100 - ((160000 - len(pad)) / 160000) * 100
-print("left in pad: {0}% left".format(padLeftPercentage))
+padLeftPercentage = 100 - ((750 - len(pad)) / 750) * 100
+print("left in pad: {:.2f}% left".format(padLeftPercentage))
 
 # plaintext message
 p_text = input("Message: ")
