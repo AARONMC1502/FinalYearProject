@@ -1,4 +1,4 @@
-import string
+"""import string
 from UsedPad import usedPad
 
 def encrypt(pad, message):
@@ -9,4 +9,4 @@ def encrypt(pad, message):
         cipherIndex = (alphabet.index(plainText[i]) + pad[i]) % 100
         cipherText += alphabet[cipherIndex]
     usedPad(len(str(cipherText)))
-    return cipherText
+    return cipherText"""

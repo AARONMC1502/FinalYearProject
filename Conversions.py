@@ -1,5 +1,4 @@
 import binascii
-import string
 
 
 def toText(binary):

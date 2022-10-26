@@ -1,6 +1,7 @@
 from EncryptV2 import encrypt
 from DecryptV2 import decrypt
 import Conversions
+import time
 
 f = open("pad.txt")
 pad = f.read()
