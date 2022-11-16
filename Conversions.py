@@ -10,7 +10,7 @@ def toBinary(text, *kwargs):
     byteText = bytes(text, *kwargs)
     binText = bin(int(binascii.hexlify(byteText), 16))
 
-    if text.isdigit():
+    if len(binText) % 8 != 0:
         print("added for digit")
         formattedBinMessage = "0" + binText[2:]
     else:

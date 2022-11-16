@@ -12,9 +12,6 @@ def usedPad(numbersUsed):
     
     """
 
-    numbersUsed = round(numbersUsed / 8)
-    print(numbersUsed)
-
     # removes chars in pad
     pad = pad[numbersUsed:]
 
