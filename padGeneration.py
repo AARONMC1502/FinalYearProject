@@ -3,7 +3,7 @@ import string
 
 def padGeneration():
     x = 0
-    padSize = 750
+    padSize = 2000
     randomNumbers = ""
     charSet = list(string.ascii_letters + string.digits + string.punctuation)
 

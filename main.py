@@ -7,7 +7,7 @@ f = open("pad.txt")
 pad = f.read()
 
 # Shows how much is left in the pad in percentage
-padLeftPercentage = 100 - ((750 - len(pad)) / 750) * 100
+padLeftPercentage = 100 - ((2000 - len(pad)) / 2000) * 100
 print("left in pad: {:.2f}% left".format(padLeftPercentage))
 
 # plaintext message
@@ -25,4 +25,4 @@ decryptedText = decrypt(cipherBinary, pad)
 print("Decrypted binary: {0}".format(decryptedText))
 
 # decoded message
-print("Decrypted message: {0}".format(Conversions.toText(decryptedText)))
+print("Decrypted message: {0}".format(Conversions.toText(decryptedText))[:-64])
