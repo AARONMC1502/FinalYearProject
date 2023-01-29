@@ -22,6 +22,9 @@ print("Encrypted message: {0}".format(Conversions.toText(cipherBinary)))
 
 # decrypted binary
 decryptedText = decrypt(cipherBinary, pad)
+
+print("HMAC Tag:", Conversions.toText(decryptedText)[-64:])
+
 print("Decrypted binary: {0}".format(decryptedText))
 
 # decoded message
