@@ -1,5 +1,5 @@
-"""import string
-from UsedPad import usedPad
+import string
+from OTP.UsedPad import usedPad
 
 def encrypt(pad, message):
     alphabet = list(string.printable)
@@ -9,4 +9,4 @@ def encrypt(pad, message):
         cipherIndex = (alphabet.index(plainText[i]) + pad[i]) % 100
         cipherText += alphabet[cipherIndex]
     usedPad(len(str(cipherText)))
-    return cipherText"""
+    return cipherText

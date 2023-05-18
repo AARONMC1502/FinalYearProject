@@ -1,5 +1,6 @@
 import Conversions
 import Hmac
+import UsedPad
 
 
 def decrypt(cipherBin, pad):
@@ -26,8 +27,11 @@ def decrypt(cipherBin, pad):
     messageHMAC = Conversions.HMACToBinary(Hmac.calc_mac(pad, str(originalPlainBin)), "utf-8")
 
     if messageHMAC[-512:] == plainBin[-512:]:
-        print("valid authentication")
+        print("HMAC authentication check: valid")
     else:
-        print("invalid authentication")
+        print("HMAC authentication check: invalid")
+
+    usedKey = round(len(plainBin) / 8)
+    UsedPad.usedPad(usedKey)
 
     return plainBin

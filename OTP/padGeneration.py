@@ -3,7 +3,7 @@ import string
 
 def padGeneration():
     x = 0
-    padSize = 2000
+    padSize = 500
     randomNumbers = ""
     charSet = list(string.ascii_letters + string.digits + string.punctuation)
 
@@ -11,7 +11,7 @@ def padGeneration():
         a = secrets.SystemRandom().choice(charSet)
         randomNumbers += str(a)
         x += 1
-    with open("pad.txt", "a") as pad:
+    with open("pad.txt", "w") as pad:
         pad.write(randomNumbers)
         pad.close()
 

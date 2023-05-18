@@ -12,6 +12,8 @@ def usedPad(numbersUsed):
     
     """
 
+    print("Used and removed from pad: {0}".format(pad[:numbersUsed]))
+
     # removes chars in pad
     pad = pad[numbersUsed:]
 

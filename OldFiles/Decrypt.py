@@ -1,4 +1,4 @@
-"""import string
+import string
 
 def decrypt(pad, message):
     alphabet = list(string.printable)
@@ -7,4 +7,4 @@ def decrypt(pad, message):
     for i in range(len(cipherText)):
         cipherIndex = (alphabet.index(cipherText[i]) - pad[i]) % 100
         plainText += alphabet[cipherIndex]
-    return plainText"""
+    return plainText
