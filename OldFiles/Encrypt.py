@@ -1,5 +1,5 @@
 import string
-from OTP.UsedPad import usedPad
+from OTPChatBackend.UsedPad import usedPad
 
 def encrypt(pad, message):
     alphabet = list(string.printable)
